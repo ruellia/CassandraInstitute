@@ -1,0 +1,94 @@
+@import "bootstrap-sprockets"
+@import "bootstrap"
+  
+.jumbotron
+  border-bottom: 1px solid #e5e5e5
+  background-color: #cce6ff
+  margin-top: 15px
+
+hr
+  color: #000
+  border-color: #000
+  background-color: #000
+  
+  
+@media (min-width: 768px)
+  .container
+    max-width: 100%
+
+.container-narrow > hr
+  margin: 30px 0
+  
+.navbar-inverse
+  background-color: #000
+
+.navbar-static-top
+  top: 0
+  border-width: 0 0 1px
+  right: 0
+  left: 0
+
+.navbar-fixed-bottom
+  position: fixed
+  right: 0
+  left: 50
+  z-index: 1030
+
+.navbar-brand
+  padding: 5px
+  
+.navbar
+  position: relative
+  min-height: 50px
+  margin-bottom: 0px
+  border: 1px solid transparent
+  
+.body-container
+  background-color: #f2f1f3
+  
+.container-fluid
+
+.large-logo
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-align-content: center
+  align-content: center
+  align-content: flex-end
+
+/* hardcoded in application.html.haml
+.body
+
+  
+.btn.btn-primary.btn-lg
+  background-color: #b30000
+  border: 0px
+  
+/* 'Open Sans Condensed' : google.com/fonts  
+h1
+  color: #b30000
+  border: 2px
+  border-color: #FFFFFF
+  font-family: 'Open Sans Condensed', sans-serif
+  
+footer
+  padding-left: 75px
+  
+* 
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
+  
+@media screen and (min-width: 768px)
+  /* Remove the padding we set earlier
+  .header, .marketing, .footer
+    padding-right: 0
+    padding-left: 0
+  /* Space out the masthead
+  .header
+    margin-bottom: 30px
+  /* Remove the bottom border on the jumbotron for visual effect
+  .jumbotron
+    border-bottom: 0
