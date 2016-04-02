@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var check = function() {
+    if (document.getElementById('one').checked) {
+        document.getElementById('first').innerHTML = "This is option one."
+    }
+    if (document.getElementById('two').checked) {
+        document.getElementById('first').innerHTML = "This is option two."
+    }
+    if (document.getElementById('1').checked) {
+        document.getElementById('second').innerHTML = "This is option one."
+    }
+    if (document.getElementById('2').checked) {
+        document.getElementById('second').innerHTML = "This is option two."
+    }    
+}
