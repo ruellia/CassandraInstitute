@@ -53,4 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  root to: 'welcome#index'
+  get '/index', :to => 'welcome#index'
+  get '/about', :to => 'welcome#about'
 end
