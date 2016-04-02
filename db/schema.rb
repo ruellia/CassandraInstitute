@@ -14,8 +14,11 @@
 ActiveRecord::Schema.define(version: 20160402212353) do
 
   create_table "instructions", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "difficulty"
+    t.string   "title"
+    t.string   "thumbnail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "welcomes", force: :cascade do |t|
