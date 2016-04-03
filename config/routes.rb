@@ -57,7 +57,7 @@ Rails.application.routes.draw do
   root to: 'welcome#index'
   get '/index', :to => 'welcome#index'
   get '/mission', :to => 'welcome#about'
-  resources :classes
+  resources :lessons
   resources :donations
   get '/links', :to => 'welcome#links'
   resources :instructions
