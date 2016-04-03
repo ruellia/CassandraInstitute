@@ -30,17 +30,20 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{:href => "#"} IMAGE THAT LINKS TO HOME PAGE
+          %a.navbar-brand{:href => index_path}
+            %img{:src => asset_path("logo.png"), :width => "250"}
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav
+            %li= link_to 'Mission', index_path
             %li= link_to 'Mission', about_path
             %li= link_to 'Make', instructions_path
             %li= link_to 'Learn With Us'
-            %li= link_to 'Donate'
+            %li= link_to 'Give us your eJunk'
         / /.navbar-collapse
       / /.container
     / Page Content
+
     .container
       .row
         .col-lg-12
