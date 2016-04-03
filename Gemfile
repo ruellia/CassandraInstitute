@@ -14,6 +14,15 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'test-unit'
+gem 'minitest'
+gem 'momentjs-rails'
+gem 'fullcalendar-rails'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+gem 'twitter' 
+gem 'google-api-client'
+
 gem 'bootstrap-sass', '~> 3.2.0'
 
 gem 'haml'
