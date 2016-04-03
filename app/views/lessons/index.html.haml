@@ -6,7 +6,8 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
-    %title Thumbnail Gallery - Start Bootstrap Template
+    %title About The Cassandra Institute
+
 
     / Custom CSS
     = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Exo+2"
@@ -37,7 +38,7 @@
             %li= link_to 'Home', index_path
             %li= link_to 'Mission', mission_path
             %li= link_to 'Make', instructions_path
-            %li= link_to 'Learn With Us', lessons_path
+            %li= link_to 'Learn With Us'
             %li= link_to 'Give us your eJunk'
         / /.navbar-collapse
       / /.container
@@ -46,21 +47,13 @@
       .row
         .col-lg-12
           %h1.page-header
-            Pick your Difficulty Level
-            = link_to "5 Min Hacks", instructions_path(:display => 'easy')
-            = link_to "Newbie", instructions_path(:display => 'medium')
-            = link_to "MacGyver", instructions_path(:display => 'hard')
-        - @instructions.each do |instruction|
-          .col-lg-3.col-md-4.col-xs-6.thumb
-            %a.thumbnail{:href => "#"}
-            %img.img-responsive{:alt => "", :src => instruction.thumbnail}/
-            #{instruction.title}
-      %hr/
+            About Us!
+          %p Fill ME in here!
       / Footer
       %footer
         .row
           .col-lg-12
-            %p Copyright © Your Website 2014
+            %p Copyright © The Cassandra Institute
     / /.container
     / jQuery
     %script{:src => "js/jquery.js"}
