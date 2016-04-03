@@ -10,24 +10,43 @@ instructions = [
     {
         difficulty: 'hard',
         title: 'batteries',
-        thumbnail: '/assets/black square.jpg'
+        thumbnail: '/assets/comp1.jpg'
     },
     {
         difficulty: 'medium',
         title: 'floppy disk',
-        thumbnail: '/assets/red square.gif'
+        thumbnail: '/assets/comp2.jpg'
     },
     {
         difficulty: 'easy',
         title: 'fax',
-        thumbnail: '/assets/yellow square.png'
+        thumbnail: '/assets/comp3.jpg'
+    },
+    {
+        difficulty: 'medium',
+        title: 'CD drive',
+        thumbnail: '/assets/comp4.jpg'
+    },
+    {
+        difficulty: 'hard',
+        title: 'charger',
+        thumbnail: '/assets/comp5.jpg'
     },
     {
         difficulty: 'easy',
-        title: 'CD drive',
-        thumbnail: '/assets/yellow square.png'
-    }
-    
+        title: 'hard drive',
+        thumbnail: '/assets/comp6.jpg'
+    },
+    {
+        difficulty: 'hard',
+        title: 'car battery',
+        thumbnail: '/assets/comp7.jpg'
+    },    
+    {
+        difficulty: 'easy',
+        title: 'solar panel',
+        thumbnail: '/assets/comp8.jpg'
+    }    
     ]
     
 instructions.each do |i|
