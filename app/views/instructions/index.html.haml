@@ -46,10 +46,10 @@
       .row
         .col-lg-12
           %h1.page-header
-            Thumbnail Gallery
-            = link_to "Easy", instructions_path(:display => 'easy')
-            = link_to "Medium", instructions_path(:display => 'medium')
-            = link_to "Hard", instructions_path(:display => 'hard')
+            Pick your Difficulty Level
+            = link_to "5 Min Hacks", instructions_path(:display => 'easy')
+            = link_to "Newbie", instructions_path(:display => 'medium')
+            = link_to "MacGyver", instructions_path(:display => 'hard')
         - @instructions.each do |instruction|
           .col-lg-3.col-md-4.col-xs-6.thumb
             %a.thumbnail{:href => "#"}
