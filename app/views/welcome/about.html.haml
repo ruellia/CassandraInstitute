@@ -19,7 +19,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       
-  %body
+      
+  %body{:onclick => "check()"}
     / Navigation
     %nav.navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
       .container
@@ -48,19 +49,36 @@
         .col-lg-12
           %h1.page-header
             About Us!
-          %p The Cassandra Institute for Technology Longevity empowers consumers to repurpose and rejuvenate obsolete consumer electronics. We are actively combatting the problem of toxic and proliferating eWaste through education and action. We are on a mission to consolidate viable eWaste and teach individuals how to utilize the hardware of the past to enrich the present and protect the future. 
-          %p The Institute runs a warehouse where consumers can drop off obsolete electronics, take classes and workshops on hardware hacking and repurposing, utilize our tools for their own projects, and where we produce educational videos and demos for our website. The physical site functions as a proof-of-concept for recycled hardware living, with demos and prototypes of all of our content. In addition to our physical space, we maintain a comprehensive website with instructional videos, links to resources, and a full calendar of our events and classes. 
-
-          %ul Available tools at the warehouse workspace:
-          %li Soldering irons/tools 
-          %li Volt meters 
-          %il Wire cutters/strippers
-          %li Shear cutters 
-          %li Needlenose pliers  
-          %li Precision screwdrivers
-          %li Tin snips 
-          %li Electrical tape 
-
+      .row 
+        %p The Cassandra Institute for Technology Longevity empowers consumers to repurpose and rejuvenate obsolete consumer electronics. We are actively combatting the problem of toxic and proliferating eWaste through education and action. We are on a mission to consolidate viable eWaste and teach individuals how to utilize the hardware of the past to enrich the present and protect the future. 
+        %p The Institute runs a warehouse where consumers can drop off obsolete electronics, take classes and workshops on hardware hacking and repurposing, utilize our tools for their own projects, and where we produce educational videos and demos for our website. The physical site functions as a proof-of-concept for recycled hardware living, with demos and prototypes of all of our content. In addition to our physical space, we maintain a comprehensive website with instructional videos, links to resources, and a full calendar of our events and classes. 
+        %ul Available tools at the warehouse workspace:
+        %li Soldering irons/tools 
+        %li Volt meters
+        %li Wire cutters/strippers
+        %li Shear cutters 
+        %li Needlenose pliers  
+        %li Precision screwdrivers
+        %li Tin snips 
+        %li Electrical tape 
+        %br
+        %p I AM...
+        %input#one.radio-btn{:name => "initial", :type => "radio", :value => "No"}
+          Interested in learning to make things 
+        %input#two.radio-btn{:name => "initial", :type => "radio", :value => "Yes"}
+          I'm no good at building things
+        %p#first
+        %p
+        %p ALSO....
+        %input#1.radio-btn{:name => "secondary", :type => "radio", :value => "No"}
+          I am Interested fixing and repurposing the electronics in my junk drawer
+        %input#2.radio-btn{:name => "secondary", :type => "radio", :value => "Yes"}
+          I'd rather just give my eJunk to a good home 
+        %p#second
+         
+          
+          
+          
       / Footer
       %footer
         .row
